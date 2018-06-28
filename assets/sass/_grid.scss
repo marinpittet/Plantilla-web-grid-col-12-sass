@@ -1,0 +1,21 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* CSS Grid */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 col layout like bootstrap */ 
+    grid-template-rows: minmax(35px, auto);
+}
+
+/* Container */
+.container--general {
+    margin: 0;
+    padding: 0; 
+}

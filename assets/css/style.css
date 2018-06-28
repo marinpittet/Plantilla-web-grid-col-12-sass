@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* CSS Grid */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 col layout like bootstrap */
+  grid-template-rows: minmax(35px, auto);
+}
+
+/* Container */
+.container--general {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.topbar {
+  grid-column: span 12;
+  height: 25px;
+  line-height: 25px;
+  background-color: #ddd;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 25px;
+  width: 100vw;
+  grid-column: span 12;
+  padding: 0 1rem;
+  height: 50px;
+  line-height: 50px;
+  background-color: #222;
+  color: #fff;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar .navbar__brand img {
+  max-height: 50px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.navbar .navbar__items {
+  display: flex;
+  margin-left: auto;
+}
+.navbar .navbar__items li {
+  margin-left: 2rem;
+}
+.navbar .navbar__link-toggle {
+  display: none;
+  margin-left: auto;
+}
+
+/* Breakpoints allways at last for correct responsivity */
+@media only screen and (max-width: 480px) {
+  .container--general {
+    max-width: 480px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container--general {
+    max-width: 767px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container--general {
+    max-width: 1023px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container--general {
+    min-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar .navbar__items {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .navbar .navbar__items {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar .navbar__items {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar .navbar__link-toggle {
+    display: block;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .navbar .navbar__link-toggle {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar .navbar__link-toggle {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+@import 'media-queries';
+
+.container--general {
+    @include mobile-layout {
+        max-width: $mq-mobile;
+    }
+
+    @include mobile-landscape {
+        max-width: $mq-tablet - 1;
+    }
+
+    @include tablet-layout {
+        max-width: $mq-desktop - 1;
+    }
+
+    @include desktop-layout {
+        min-width: $mq-desktop;
+    }
+}
+
+.navbar {
+    .navbar__items {
+
+        @include mobile-layout {
+            display: none;
+        }
+
+        @include mobile-landscape {
+            display: none;
+        }
+
+        @include tablet-layout {
+            display: none;
+        }
+    }
+
+    .navbar__link-toggle {
+
+        @include mobile-layout {
+            display: block;
+        }
+
+        @include mobile-landscape {
+            display: block;
+        }
+
+        @include tablet-layout {
+            display: block;
+        }
+    }
+}
