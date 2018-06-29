@@ -44,16 +44,45 @@ body {
 
         li {
             margin-left: 2rem;
+            font-weight: 300;
         }
     }
 
-    .navbar__link-toggle {
+    .navbar__toggle {
         display: none;
         margin-left: auto;
+        cursor: pointer;
+        line-height: 50px;
+    }
+
+    .sidenav--close{
+        display: none;
+        right: 0;
+    }
+
+    .sidenav--open {
+		display: flex;
+        right: 0;
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 75px;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 40px;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .sidenav__items {
+    	margin: 0 auto;
+    	font-weight: 300;
+        transition: 1s;
     }
 }
 
 
-/* Breakpoints allways at last for correct responsivity */
 
+/* Breakpoints allways at last for correct responsivity */
 @import 'breakpoints';

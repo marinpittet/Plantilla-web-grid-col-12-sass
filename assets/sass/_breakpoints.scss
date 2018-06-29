@@ -23,29 +23,67 @@
 
         @include mobile-layout {
             display: none;
+            flex-direction: column;
         }
 
         @include mobile-landscape {
             display: none;
+            flex-direction: column;
         }
 
         @include tablet-layout {
             display: none;
+            flex-direction: column;
         }
     }
 
-    .navbar__link-toggle {
-
+    .navbar__toggle {
         @include mobile-layout {
             display: block;
+
+            .fa-bars {
+                display: block;
+                line-height: 50px;
+                transition: display 1s;
+            }
+
+            .fa-times {
+                display: none;
+                line-height: 50px;
+                transition: display 1s;
+            }
         }
 
         @include mobile-landscape {
             display: block;
+
+            .fa-bars {
+                display: block;
+                line-height: 50px;
+                transition: display 1s;
+            }
+
+            .fa-times {
+                display: none;
+                line-height: 50px;
+                transition: display 1s;
+            }
         }
 
         @include tablet-layout {
             display: block;
+
+            .fa-bars {
+                display: block;
+                line-height: 50px;
+                transition: display 1s;
+            }
+
+            .fa-times {
+                display: none;
+                line-height: 50px;
+                transition: display 1s;
+            }
         }
     }
 }

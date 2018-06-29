@@ -59,10 +59,36 @@ body {
 }
 .navbar .navbar__items li {
   margin-left: 2rem;
+  font-weight: 300;
 }
-.navbar .navbar__link-toggle {
+.navbar .navbar__toggle {
   display: none;
   margin-left: auto;
+  cursor: pointer;
+  line-height: 50px;
+}
+.navbar .sidenav--close {
+  display: none;
+  right: 0;
+}
+.navbar .sidenav--open {
+  display: flex;
+  right: 0;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 40px;
+  text-align: center;
+  transition: 1s;
+}
+.navbar .sidenav__items {
+  margin: 0 auto;
+  font-weight: 300;
+  transition: 1s;
 }
 
 /* Breakpoints allways at last for correct responsivity */
@@ -90,31 +116,64 @@ body {
 @media only screen and (max-width: 480px) {
   .navbar .navbar__items {
     display: none;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .navbar .navbar__items {
     display: none;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar .navbar__items {
     display: none;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 480px) {
-  .navbar .navbar__link-toggle {
+  .navbar .navbar__toggle {
     display: block;
+  }
+  .navbar .navbar__toggle .fa-bars {
+    display: block;
+    line-height: 50px;
+    transition: display 1s;
+  }
+  .navbar .navbar__toggle .fa-times {
+    display: none;
+    line-height: 50px;
+    transition: display 1s;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  .navbar .navbar__link-toggle {
+  .navbar .navbar__toggle {
     display: block;
+  }
+  .navbar .navbar__toggle .fa-bars {
+    display: block;
+    line-height: 50px;
+    transition: display 1s;
+  }
+  .navbar .navbar__toggle .fa-times {
+    display: none;
+    line-height: 50px;
+    transition: display 1s;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .navbar .navbar__link-toggle {
+  .navbar .navbar__toggle {
     display: block;
+  }
+  .navbar .navbar__toggle .fa-bars {
+    display: block;
+    line-height: 50px;
+    transition: display 1s;
+  }
+  .navbar .navbar__toggle .fa-times {
+    display: none;
+    line-height: 50px;
+    transition: display 1s;
   }
 }
 
