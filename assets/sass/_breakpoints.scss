@@ -42,15 +42,17 @@
             display: block;
 
             .fa-bars {
+            	opacity: 1;
                 display: block;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
 
             .fa-times {
+            	opacity: 0;
                 display: none;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
         }
 
@@ -58,15 +60,17 @@
             display: block;
 
             .fa-bars {
+            	opacity: 1;
                 display: block;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
 
             .fa-times {
+            	opacity: 0;
                 display: none;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
         }
 
@@ -74,15 +78,17 @@
             display: block;
 
             .fa-bars {
+            	opacity: 1;
                 display: block;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
 
             .fa-times {
+            	opacity: 0;
                 display: none;
                 line-height: 50px;
-                transition: display 1s;
+                transition: 1s;
             }
         }
     }

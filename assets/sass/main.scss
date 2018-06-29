@@ -78,7 +78,8 @@ body {
     .sidenav__items {
     	margin: 0 auto;
     	font-weight: 300;
-        transition: 1s;
+    	opacity: 0;
+        transition: .5s;
     }
 }
 

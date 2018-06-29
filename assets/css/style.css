@@ -88,7 +88,8 @@ body {
 .navbar .sidenav__items {
   margin: 0 auto;
   font-weight: 300;
-  transition: 1s;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 /* Breakpoints allways at last for correct responsivity */
@@ -136,14 +137,16 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
+    opacity: 1;
     display: block;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
+    opacity: 0;
     display: none;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -151,14 +154,16 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
+    opacity: 1;
     display: block;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
+    opacity: 0;
     display: none;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -166,14 +171,16 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
+    opacity: 1;
     display: block;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
+    opacity: 0;
     display: none;
     line-height: 50px;
-    transition: display 1s;
+    transition: 1s;
   }
 }
 
