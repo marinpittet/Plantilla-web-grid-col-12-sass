@@ -37,6 +37,7 @@ body {
   grid-column: span 12;
   position: fixed;
   padding: 0 1rem;
+  width: 100vw;
   height: 25px;
   line-height: 25px;
   background-color: #34333D;
