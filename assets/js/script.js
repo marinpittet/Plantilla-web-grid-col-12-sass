@@ -1,5 +1,4 @@
-$(function(){
-	// Date topbar
+// Date topbar
 	$(window).on('load', function(){
 		var d = new Date();
 		d = d.toDateString();
@@ -11,6 +10,8 @@ $(function(){
 		$('#date').text(' ' + d);
 	});
 	// /Date topbar
+
+$(function(){
 
 	// Toggleable Navbar
 	$('.navbar__toggle').click(function(){
