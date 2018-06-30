@@ -9,6 +9,7 @@ body {
 
 .topbar {
     grid-column: span 12;
+    position: fixed;
     padding: 0 1rem;
     height: 25px;
     line-height: 25px;
