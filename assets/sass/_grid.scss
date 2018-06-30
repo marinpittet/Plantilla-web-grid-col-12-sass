@@ -14,6 +14,12 @@
     grid-template-rows: minmax(35px, auto);
 }
 
+.wrapper__sub-wrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 col layout like bootstrap */ 
+    grid-template-rows: minmax(20px, auto);
+}
+
 /* Container */
 .container--general {
     margin: 0;

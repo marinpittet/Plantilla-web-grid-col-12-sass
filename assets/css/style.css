@@ -15,6 +15,13 @@
   grid-template-rows: minmax(35px, auto);
 }
 
+.wrapper__sub-wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 col layout like bootstrap */
+  grid-template-rows: minmax(20px, auto);
+}
+
 /* Container */
 .container--general {
   margin: 0;
@@ -28,28 +35,33 @@ body {
 
 .topbar {
   grid-column: span 12;
+  padding: 0 1rem;
   height: 25px;
   line-height: 25px;
-  background-color: #ddd;
+  background-color: #34333D;
+  color: #AFA7BD;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-align: right;
 }
 
 .navbar {
+  grid-column: span 12;
   position: fixed;
   display: flex;
   top: 25px;
   width: 100vw;
-  grid-column: span 12;
   padding: 0 1rem;
-  height: 50px;
-  line-height: 50px;
-  background-color: #222;
-  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  background-color: #292930;
+  color: #EEE;
 }
 .navbar a {
   color: #fff;
 }
 .navbar .navbar__brand img {
-  max-height: 50px;
+  max-height: 60px;
   padding: 5px;
   margin-right: 5px;
 }
@@ -65,7 +77,7 @@ body {
   display: none;
   margin-left: auto;
   cursor: pointer;
-  line-height: 50px;
+  line-height: 60px;
 }
 .navbar .sidenav--close {
   display: none;
@@ -78,11 +90,12 @@ body {
   width: 0px;
   position: fixed;
   z-index: 1;
-  top: 75px;
+  top: 85px;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 40px;
   text-align: center;
+  opacity: 0.95;
   transition: 1s;
 }
 .navbar .sidenav__items {
@@ -137,15 +150,15 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
-    opacity: 1;
+    opacity: 0.8;
     display: block;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
     opacity: 0;
     display: none;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
 }
@@ -154,15 +167,15 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
-    opacity: 1;
+    opacity: 0.8;
     display: block;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
     opacity: 0;
     display: none;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
 }
@@ -171,15 +184,15 @@ body {
     display: block;
   }
   .navbar .navbar__toggle .fa-bars {
-    opacity: 1;
+    opacity: 0.8;
     display: block;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
   .navbar .navbar__toggle .fa-times {
     opacity: 0;
     display: none;
-    line-height: 50px;
+    line-height: 60px;
     transition: 1s;
   }
 }

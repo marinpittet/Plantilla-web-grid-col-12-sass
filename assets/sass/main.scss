@@ -9,22 +9,27 @@ body {
 
 .topbar {
     grid-column: span 12;
+    padding: 0 1rem;
     height: 25px;
     line-height: 25px;
-    background-color: #ddd;
+    background-color: $primary-color--complementary;
+    color: $secondary-color;
+    font-size: .7rem;
+    font-weight: 300;
+    text-align: right;
 }
 
 .navbar {
+	grid-column: span 12;
     position: fixed;
     display: flex;
     top: 25px;
     width: 100vw;
-    grid-column: span 12;
     padding: 0 1rem;
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     background-color: $primary-color;
-    color: #fff;
+    color: #EEE;
 
     a {
         color: #fff;
@@ -32,7 +37,7 @@ body {
 
     .navbar__brand {
         img {
-            max-height: 50px;
+            max-height: 60px;
             padding: 5px;
             margin-right: 5px;
         }
@@ -52,7 +57,7 @@ body {
         display: none;
         margin-left: auto;
         cursor: pointer;
-        line-height: 50px;
+        line-height: 60px;
     }
 
     .sidenav--close{
@@ -67,11 +72,12 @@ body {
         width: 0px;
         position: fixed;
         z-index: 1;
-        top: 75px;
+        top: 85px;
         background-color: #111;
         overflow-x: hidden;
         padding-top: 40px;
         text-align: center;
+        opacity: .95;
         transition: 1s;
     }
 
