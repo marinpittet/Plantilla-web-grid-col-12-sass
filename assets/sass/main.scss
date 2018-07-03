@@ -2,95 +2,156 @@
 @import 'grid';
 @import 'media-queries';
 
+html {
+  overflow-x: hidden;
+}
+
 body {
     font-family: $font-body;
     box-sizing: border-box;
-}
+};
 
-.topbar {
-    grid-column: span 12;
-    position: fixed;
-    padding: 0 1rem;
-    width: 100vw;
-    height: 25px;
-    line-height: 25px;
-    background-color: $primary-color--complementary;
-    color: $secondary-color;
-    font-size: .7rem;
-    font-weight: 300;
-    text-align: right;
-}
+/* Barra de navegación con despliegue lateral */
+nav {
+	z-index: 1000;
+	height: 85px;
+	width: 100vw;
+	.topbar {
+	    grid-column: span 12;
+	    position: fixed;
+	    padding: 0 2rem;
+	    width: 100vw;
+	    height: 25px;
+	    line-height: 25px;
+	    background-color: $primary-color--complementary;
+	    color: $secondary-color;
+	    font-size: .7rem;
+	    font-weight: 300;
+	    text-align: right;
+	}
 
-.navbar {
+	.navbar {
+		grid-column: span 12;
+	    position: fixed;
+	    display: flex;
+	    top: 25px;
+	    width: 100vw;
+	    padding: 0 2rem 0 1rem;
+	    height: 60px;
+	    line-height: 60px;
+	    background-color: $primary-color;
+	    color: #EEE;
+
+	    a {
+	        color: #fff;
+	    }
+
+	    .navbar__brand {
+	        img {
+	            max-height: 60px;
+	            padding: 5px;
+	            margin-right: 5px;
+	        }
+	    }
+
+	    .navbar__items {
+	        display: flex;
+	        margin-left: auto;
+
+	        li {
+	            margin-left: 2rem;
+	            font-weight: 300;
+	        }
+	    }
+
+	    .navbar__toggle {
+	        display: none;
+	        margin-left: auto;
+	        cursor: pointer;
+	        line-height: 60px;
+	    }
+
+	    .sidenav--close{
+	        display: none;
+	        right: 0;
+	    }
+
+	    .sidenav--open {
+			display: flex;
+	        right: 0;
+	        height: 100%;
+	        width: 0px;
+	        position: fixed;
+	        z-index: 1;
+	        top: 85px;
+	        background-color: #111;
+	        overflow-x: hidden;
+	        padding-top: 40px;
+	        text-align: center;
+	        opacity: .95;
+	        transition: 1s;
+	    }
+
+	    .sidenav__items {
+	    	margin: 0 auto;
+	    	font-weight: 300;
+	    	opacity: 0;
+	        transition: .5s;
+	    }
+	}
+}
+/* /Barra de navegación con despliegue lateral */
+
+.sec1 {
 	grid-column: span 12;
-    position: fixed;
-    display: flex;
-    top: 25px;
-    width: 100vw;
-    padding: 0 1rem;
-    height: 60px;
-    line-height: 60px;
-    background-color: $primary-color;
-    color: #EEE;
+	position: relative;
+	display: flex;
 
-    a {
-        color: #fff;
-    }
-
-    .navbar__brand {
-        img {
-            max-height: 60px;
-            padding: 5px;
-            margin-right: 5px;
-        }
-    }
-
-    .navbar__items {
-        display: flex;
-        margin-left: auto;
-
-        li {
-            margin-left: 2rem;
-            font-weight: 300;
-        }
-    }
-
-    .navbar__toggle {
-        display: none;
-        margin-left: auto;
-        cursor: pointer;
-        line-height: 60px;
-    }
-
-    .sidenav--close{
-        display: none;
-        right: 0;
-    }
-
-    .sidenav--open {
-		display: flex;
-        right: 0;
-        height: 100%;
-        width: 0px;
-        position: fixed;
-        z-index: 1;
-        top: 85px;
-        background-color: #111;
-        overflow-x: hidden;
-        padding-top: 40px;
-        text-align: center;
-        opacity: .95;
-        transition: 1s;
-    }
-
-    .sidenav__items {
-    	margin: 0 auto;
-    	font-weight: 300;
-    	opacity: 0;
-        transition: .5s;
-    }
+	.sec1__background {
+	height: calc(100vh - 85px);
+	width: 100%;	
+		background-image: url('https://picsum.photos/g/700/?blur');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
+.sec2 {
+	grid-column: span 12;
+	position: relative;
+	display: flex;
 
+	.sec2__background {
+	height: calc(100vh - 85px);
+	width: 100%;	
+		background-color: $primary-color;
+	}
+}
+.sec3 {
+	grid-column: span 12;
+	position: relative;
+	display: flex;
+
+	.sec3__background {
+	height: calc(100vh - 85px);
+	width: 100%;	
+		background-image: url('https://picsum.photos/g/700/?random');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+.sec4 {
+	grid-column: span 12;
+	position: relative;
+	display: flex;
+
+	.sec4__background {
+	height: calc(100vh - 85px);
+	width: 100%;	
+		background-image: url('https://picsum.photos/700/?random');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
 
 
 /* Breakpoints allways at last for correct responsivity */
