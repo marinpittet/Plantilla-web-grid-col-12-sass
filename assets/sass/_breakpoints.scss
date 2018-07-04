@@ -18,6 +18,25 @@
     }
 }
 
+.container--center {
+    @include mobile-layout {
+        max-width: $mq-mobile;
+    }
+
+    @include mobile-landscape {
+        max-width: $mq-tablet - 1;
+    }
+
+    @include tablet-layout {
+        max-width: $mq-desktop - 1;
+    }
+
+    @include desktop-layout {
+        max-width: $mq-desktop;
+        margin: 0 auto;
+    }
+}
+
 nav {
 .navbar {
     .navbar__items {

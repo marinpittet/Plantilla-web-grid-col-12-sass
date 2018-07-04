@@ -17,10 +17,7 @@
 }
 
 .wrapper__sub-wrap {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* 12 col layout like bootstrap */
-  grid-template-rows: minmax(20px, auto);
+  grid-column: 12 span;
 }
 
 /* Container */
@@ -36,6 +33,10 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+.container--center {
+  padding: 2rem;
 }
 
 /* Barra de navegación con despliegue lateral */
@@ -118,49 +119,34 @@ nav .navbar .sidenav__items {
 }
 
 /* /Barra de navegación con despliegue lateral */
-.sec1 {
+.sec {
   grid-column: span 12;
   position: relative;
   display: flex;
 }
-.sec1 .sec1__background {
+.sec .sec__title {
+  padding: 2rem 0;
+}
+.sec .sec__background--1 {
   height: calc(100vh - 85px);
   width: 100%;
   background-image: url("https://picsum.photos/g/700/?blur");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.sec2 {
-  grid-column: span 12;
-  position: relative;
-  display: flex;
-}
-.sec2 .sec2__background {
+.sec .sec__background--2 {
   height: calc(100vh - 85px);
   width: 100%;
   background-color: #292930;
 }
-
-.sec3 {
-  grid-column: span 12;
-  position: relative;
-  display: flex;
-}
-.sec3 .sec3__background {
+.sec .sec__background--3 {
   height: calc(100vh - 85px);
   width: 100%;
   background-image: url("https://picsum.photos/g/700/?random");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.sec4 {
-  grid-column: span 12;
-  position: relative;
-  display: flex;
-}
-.sec4 .sec4__background {
+.sec .sec__background--4 {
   height: calc(100vh - 85px);
   width: 100%;
   background-image: url("https://picsum.photos/700/?random");
@@ -187,6 +173,28 @@ nav .navbar .sidenav__items {
 @media only screen and (min-width: 1024px) {
   .container--general {
     min-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container--center {
+    max-width: 480px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container--center {
+    max-width: 767px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container--center {
+    max-width: 1023px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container--center {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
 

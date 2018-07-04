@@ -9,7 +9,11 @@ html {
 body {
     font-family: $font-body;
     box-sizing: border-box;
-};
+}
+
+.container--center {
+	padding: 2rem;
+}
 
 /* Barra de navegación con despliegue lateral */
 nav {
@@ -102,49 +106,38 @@ nav {
 }
 /* /Barra de navegación con despliegue lateral */
 
-.sec1 {
+.sec {
 	grid-column: span 12;
 	position: relative;
 	display: flex;
 
-	.sec1__background {
+	.sec__title {
+		padding: 2rem 0;
+	}
+
+	.sec__background--1 {
 	height: calc(100vh - 85px);
 	width: 100%;	
 		background-image: url('https://picsum.photos/g/700/?blur');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-}
-.sec2 {
-	grid-column: span 12;
-	position: relative;
-	display: flex;
 
-	.sec2__background {
+	.sec__background--2 {
 	height: calc(100vh - 85px);
 	width: 100%;	
 		background-color: $primary-color;
 	}
-}
-.sec3 {
-	grid-column: span 12;
-	position: relative;
-	display: flex;
 
-	.sec3__background {
+	.sec__background--3 {
 	height: calc(100vh - 85px);
 	width: 100%;	
 		background-image: url('https://picsum.photos/g/700/?random');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-}
-.sec4 {
-	grid-column: span 12;
-	position: relative;
-	display: flex;
 
-	.sec4__background {
+	.sec__background--4 {
 	height: calc(100vh - 85px);
 	width: 100%;	
 		background-image: url('https://picsum.photos/700/?random');
